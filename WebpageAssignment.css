@@ -1,0 +1,338 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header {
+  background-color: #161616;
+  text-align: center;
+  padding: 10px;
+	display: flex;
+  align-items:center;
+}
+
+
+body {
+	background-color: #222222;
+	animation: fadeIn 2s;
+}
+
+
+
+
+
+h1 {
+	color: #D2BAA0;
+	font-size: 70px;
+	font-family: Bord;
+	text-shadow: 4px 2px gray;
+	animation: fadeIn 2s;
+}
+
+.logo {
+	width: 5%;
+	animation: fadeIn 2s;
+}
+
+p {
+	color: #CDCDCD;
+	font-family: Genome;
+	animation: fadeIn 2s;
+}
+
+h2 {
+	color: #9F9F9F; 
+	font-family: 'Montserrat', sans-serif;
+	animation: fadeIn 2s;
+	
+	
+}
+
+
+	
+
+ @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+
+.heading2 {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	text-shadow: 0px 0px gray;
+	padding-top: 100px; 
+}
+
+																/*Fonts download start */
+
+@font-face {
+	font-family: Genome;
+	src: url("Genome/Genome-Thin.otf");
+}
+
+@font-face {
+	font-family: Bord;
+	src: url("Bord/Bord.otf");
+}
+
+																	/* Fonts download end*/
+
+
+														/*navigator bar code start */
+
+a {
+	font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #C5A785;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #D2BAA0;
+}
+
+														/*navigator bar code end */
+
+											
+																	/*column code start */
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding-left: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 20%;
+	background-color: rgba(5,5,5,0.5)
+}
+
+
+
+/* Middle column */
+.column.middle {
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: rgb(197,167,133, 0.4);
+  padding: 15px;
+	text-align: center;
+	
+}
+
+* {box-sizing:border-box}
+
+																	/*Column code start*/
+
+
+																/* Image slideshow code start*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+	animation: fadeIn 2s;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+																		/* Image slide show code end*/
+
+
+															/*Social media buttons code start */
+.fa {
+  padding: 15px;
+  font-size: 50px;
+  text-decoration: none;
+  border-radius: 50%;
+text-align: left;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+															/* Social media button code end */
+
+																					/* subscription form code start*/
+.newsletterheader {
+	font-family: 'Montserrat', sans-serif;
+	color: #C5A785;
+}
+
+.newsletterinfo {
+	font-family: Genome;
+	color: rgba(207,207,207);
+}
+
+form {
+  border: 3px solid #292929;
+  font-family: Genome;
+	width: 100%;
+	text-align: center;
+	
+}
+
+.container {
+  padding: 20px;
+  background-color: #292929;
+}
+
+input[type=text], input[type=submit] {
+  width: 50%;
+  padding: 12px; 
+  margin: 0px 0px 0px;
+	color: #E3E3E3;
+  display: inline-block;
+  border: 1px solid #292929;
+  box-sizing: border-box;
+	background-color: #525151;
+	
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+	color: #292929;
+}
+
+input[type=submit] {
+  background-color: #525151;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+
+
+																					/* subscription form code end*/
